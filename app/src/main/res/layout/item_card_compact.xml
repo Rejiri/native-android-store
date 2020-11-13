@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout4"
+    android:layout_width="105dp"
+    android:layout_height="120dp"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/Card1"
+    android:layout_margin="3dp"
+    android:background="@drawable/roundcard">
+
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="2dp"
+        android:background="#ffffff" />
+
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imgItem"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@+id/txtPrice"
+        android:text="مشروب الطاقة"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/text_07"
+        app:fonti="4" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="7dp"
+        android:text="02.50"
+        android:textColor="#e10000"
+        android:textSize="@dimen/text_08"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+    <ImageView
+        android:id="@+id/favoriteicon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/ic_favorite_black_12dp"
+        android:tint="#b3b3b3" />
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_brightness_1_black_24dp"
+        android:tint="#3ad900"
+        android:visibility="gone" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/txtLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favoriteicon"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/favoriteicon"
+        android:text="0"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/text_08"
+        android:textStyle="bold"
+        app:fonti="4" />
+</RelativeLayout>

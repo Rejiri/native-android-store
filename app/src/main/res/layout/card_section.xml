@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:background="#fafafa">
+
+    <ImageView
+        android:id="@+id/imgSection"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/layLabel"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/layLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@+id/layIcon">
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_10"
+                app:fonti="4" />
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtName"
+                android:textAlignment="0"
+                android:textSize="@dimen/text_08"
+                app:fonti="4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:tint="@color/darkred" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

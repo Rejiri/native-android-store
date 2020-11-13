@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Talabatcom</string>
+    <string name="facebook_app_id">1223550211092289</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_group">GroupActivity</string>
+    <string name="title_activity_section">SectionActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_small_card">SmallCardActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+
+    <string name="tag_one">1</string>
+    <string name="label_mr">السيد</string>
+    <string name="label_mrs">السيدة</string>
+    <string name="default_city">عمان</string>
+
+    <string name="developer_address">ISTANBUL - TAKSIM - Talimhane Şehit Muhtar Cd. No. 8/B</string>
+    <string name="developer_phone_1">AR: +1 234 567 89 01</string>
+    <string name="developer_phone_2">EN: +1 234 567 89 02</string>
+    <string name="developer_email">info@akrogroup.net</string>
+
+    <string name="about_us_0">من نحن</string>
+    <string name="about_us_1">تطبيق طلباتكم هو اكبر تطبيق للتسوق الالكتروني في الاردن,نعمل طيلة ايام الاسبوع من الساعة 10.00 صباحا لغاية الساعة 10.00 مساءا لنلبي جميع احتياجاتكم من المطاعم والمواد التموينية والخضار والفواكة وغيرها الكثير مع ضمان الجودة والخدمة الممتازة والسعر المناسب وواصل لباب بيتكم كمان.</string>
+    <string name="about_us_2">لا داعي لهدر الوقت والمال للتسوق والانتظار, مع طلباتكم لديك المزيد من الوقت للعائلة والعمل والاصدقاء.</string>
+    <string name="about_us_3">عشان الحياة حلوة, عشان طلباتكم اوامر</string>
+    <string name="about_us_4">0797503007</string>
+    <string name="about_us_5">0797503008</string>
+    <string name="TVAvailable">متاح الأن</string>
+    <string name="TVUnAvailable">مغلق</string>
+</resources>

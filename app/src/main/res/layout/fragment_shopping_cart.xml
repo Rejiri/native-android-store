@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layOrder"
+    android:layout_width="65dp"
+    android:layout_height="65dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/iconshop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/shoppingb"
+        android:tint="@color/orangese" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconshop"
+        android:layout_centerHorizontal="true"
+        android:text="00.0 JD"
+        android:textColor="@color/orangese"
+        android:textSize="@dimen/text_08"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iconshop"
+        android:layout_alignTop="@+id/iconshop">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/circle2" />
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/redlight"
+            android:textSize="@dimen/text_08"
+            android:textStyle="bold"
+            app:fonti="4" />
+    </RelativeLayout>
+</RelativeLayout>

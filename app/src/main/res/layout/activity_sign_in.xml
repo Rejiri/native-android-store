@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ec1b30"
+    android:layoutDirection="ltr"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/logo" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/talabatcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="TALABATCOM"
+        android:textColor="#FFBC33"
+        android:textSize="@dimen/text_15"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/sgint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/talabatcom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="الرجاء تسجيل الدخول لاستخدام التطبيق"
+        android:textColor="@color/whitered"
+        android:textSize="@dimen/text_12"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/btnSkip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#ffbc33"
+        android:padding="10dp"
+        android:textSize="@dimen/text_10"
+        android:text="تـسـجيـل"
+        android:textColor="@color/darkred"
+        android:textStyle="bold" />
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="تخطي هذه الخطوة الأن"
+        android:textColor="@color/whitered"
+        android:textSize="@dimen/text_10"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btnSkip"
+        android:layout_marginBottom="15dp"
+        android:background="@color/whitered">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnFacebookSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sgint1"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/roundsginfb">
+
+        <com.lopicard.sonial.TextView2
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="قم بتسجيل الدخول بأستخدام فيسبوك"
+            android:textColor="@color/whitered"
+            android:textSize="@dimen/text_12"
+            app:fonti="4" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/second2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnFacebookSignIn"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundsginfb">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/second3" />
+
+        <com.lopicard.sonial.TextView2
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="قم بتسجيل الدخول بأستخدام جوجل بلس"
+            android:textColor="@color/whitered"
+            android:textSize="@dimen/text_12"
+            app:fonti="4" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

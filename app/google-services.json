@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "79523880807",
+    "project_id": "sonial-97b06"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72204880807:android:8a6ddmue08ab7338",
+        "android_client_info": {
+          "package_name": "com.lopicard.sonial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79523880807-bvr5jgpkad5r4tk0igpj62ysge1lpm08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lopicard.sonial",
+            "certificate_hash": "7634f9020367bfd131fdf36089356bc35amio425"
+          }
+        },
+        {
+          "client_id": "79523880807-bvr5jgpkad5r4tk0igpj62ysge1lpm08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDopEo5A0tGQpXgCLMnQ_AYlXPVIllbHFw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

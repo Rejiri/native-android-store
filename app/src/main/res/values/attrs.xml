@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextView2">
+        <attr name="fonti" format="integer" />
+        <attr name="localText" format="integer" />
+    </declare-styleable>
+</resources>

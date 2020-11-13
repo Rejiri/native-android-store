@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_section"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lopicard.sonial.SectionActivity"
+    tools:showIn="@layout/activity_section">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/firstChild"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/redlight"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/txtSectionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_22" />
+
+            <ImageView
+                android:id="@+id/textTalab"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/th1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textTalab"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:tint="#ffffff"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/floatingActionButton6"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/redlight"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_notifications_none_black_24dp"
+                    android:tint="#ffffff" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/floatingActionButton7"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/redlight"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="#ffffff" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/sertap"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstChild"
+        android:background="#ec1b30" />
+
+    <RelativeLayout
+        android:id="@+id/layGroupsBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sertap">
+
+        <RelativeLayout
+            android:id="@+id/layAll"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/round2">
+
+            <com.lopicard.sonial.TextView2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="الكل"
+                android:textSize="@dimen/text_10"
+                app:fonti="4" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/textOnlyGroupRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/layAll" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layGroupsBar" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstChild" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_shoppingCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp" />
+</RelativeLayout>

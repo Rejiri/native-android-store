@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/boxphoto" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignStart="@+id/imgItem"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round">
+
+                <ImageView
+                    android:id="@+id/love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ic_favorite_black_10dp"
+                    android:tint="#ffffff"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/love"
+                    android:paddingEnd="5dp"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_08"
+                    app:fonti="4"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/layImage">
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/text_10"
+                android:textStyle="bold"
+                app:fonti="4" />
+
+
+            <RelativeLayout
+                android:id="@+id/qty"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtName"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundqty">
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtRemove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/txtQuantity"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#cd2f3a"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/text_12"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/txtQuantity"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="#cd2f3a"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/qty">
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="السعر  "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_09"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/title2"
+                    android:layout_marginEnd="6dp"
+                    android:layout_toStartOf="@+id/title2"
+                    android:text="00.00 JD"
+                    android:textColor="#e20000"
+                    android:textSize="@dimen/text_09"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/title2"
+                    android:layout_below="@+id/txtPrice"
+                    android:layout_marginTop="2dp"
+                    android:text="الحاله  "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_09"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/title4"
+                    android:layout_alignEnd="@+id/txtPrice"
+                    android:layout_toStartOf="@+id/title4"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="@dimen/text_09"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+
+                <!--<com.lopicard.sonial.TextView2-->
+                <!--android:id="@+id/title5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignEnd="@+id/title2"-->
+                <!--android:layout_below="@+id/title4"-->
+                <!--android:layout_marginBottom="2dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:text="القسم  "-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="13sp"-->
+                <!--app:fonti="4" />-->
+
+                <!--<com.lopicard.sonial.TextView2-->
+                <!--android:id="@+id/txtGroup"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/title5"-->
+                <!--android:layout_marginEnd="6dp"-->
+                <!--android:layout_toStartOf="@+id/title5"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="11sp"-->
+                <!--app:fonti="4" />-->
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/lblWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtStatus"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@+id/txtCapacity"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_09"
+                    app:fonti="4" />
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lblWeight"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="7dp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_09"
+                    app:fonti="4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stateus2"
+                android:layout_width="65dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@+id/qty"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/qty"
+                android:background="@drawable/aaa2">
+
+                <com.lopicard.sonial.TextView2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:text="جديد"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_07"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="#e0292a" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layAvailable"
+                android:layout_width="65dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@+id/qty"
+                android:layout_marginEnd="49dp"
+                android:layout_toStartOf="@+id/qty"
+                android:background="@drawable/round">
+
+                <com.lopicard.sonial.TextView2
+                    android:id="@+id/txtAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_07"
+                    android:textStyle="bold"
+                    app:fonti="4" />
+            </RelativeLayout>
+
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/qtyorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layAvailable"
+                android:layout_alignEnd="@+id/stateus2"
+                android:layout_marginTop="4dp"
+                android:text="عدد الطلبات"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_07"
+                app:fonti="4" />
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtRequestsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/qtyorder"
+                android:layout_marginEnd="3dp"
+                android:layout_toStartOf="@+id/qtyorder"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_07"
+                app:fonti="4" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

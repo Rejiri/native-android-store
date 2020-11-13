@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lopicard.sonial.GroupActivity"
+    tools:showIn="@layout/activity_group">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/firstChild"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/redlight"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/textTalab"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/th1" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textTalab"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:tint="#ffffff" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/floatingActionButton6"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/redlight"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_notifications_none_black_24dp"
+                    android:tint="#ffffff" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/floatingActionButton7"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/redlight"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="#ffffff" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/sertap"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstChild"
+        android:background="#ec1b30">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/barserch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            app:cardBackgroundColor="@color/darkred"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/iconSRC2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:tint="#ffffff" />
+
+                <com.lopicard.sonial.TextView2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/iconSRC2"
+                    android:alpha="0.5"
+                    android:text="ابدأ البحث عن اسم الصنف في هذا القسم"
+                    android:textColor="#ffffff"
+                    android:textSize="11dp"
+                    app:fonti="4"
+                    android:textStyle="bold" />
+
+                <com.lopicard.sonial.TextView2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="13dp"
+                    android:text="٥٥٠ صنف متوفر"
+                    android:textColor="#ffffff"
+                    app:fonti="4"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sertap" />
+</RelativeLayout>

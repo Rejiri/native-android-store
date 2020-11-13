@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_orders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="0dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/floatingActionButton7"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="@color/redlight"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="#ffffff" />
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/iconSRC"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_list"
+                android:tint="#ffffff" />
+
+            <com.lopicard.sonial.TextView2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iconSRC"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/iconSRC"
+                android:text="سجل الطلبات"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_16"
+                app:fonti="4" />
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="معلومات جميع الطلبات"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_10"
+                android:textStyle="bold"
+                app:fonti="4" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.lopicard.sonial.TextView2
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toolbar3"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:text="الطلبات"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_10"
+        android:textStyle="bold"
+        app:fonti="4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/today"
+        android:layout_margin="6dp" />
+</RelativeLayout>

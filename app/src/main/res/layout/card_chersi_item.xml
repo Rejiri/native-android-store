@@ -1,0 +1,225 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Card1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/qtyitemstotal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:paddingBottom="2dp"
+    app:cardBackgroundColor="#fcfcfc"
+    app:cardCornerRadius="5dp"
+    app:contentPaddingBottom="2dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toStartOf="@+id/stateus"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/imgItem"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round">
+
+            <ImageView
+                android:id="@+id/love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="5dp"
+                android:src="@drawable/ic_favorite_black_10dp"
+                android:tint="#ffffff" />
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/love"
+                android:paddingEnd="5dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_09"
+                android:textStyle="bold"
+                app:fonti="4" />
+
+        </RelativeLayout>
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:text="مشروي طاقة بهوي يسشسيبسيشش"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/text_10"
+            android:textStyle="bold"
+            app:fonti="4" />
+
+
+        <RelativeLayout
+            android:id="@+id/qty"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtName"
+            android:layout_margin="12dp"
+            android:background="@drawable/roundqty">
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtRemove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/txtQuantity"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="#cd2f3a"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold"
+                app:fonti="4" />
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/text_15"
+                app:fonti="4" />
+
+
+            <com.lopicard.sonial.TextView2
+                android:id="@+id/txtAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/txtQuantity"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#cd2f3a"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold"
+                app:fonti="4" />
+        </RelativeLayout>
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/qty"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:text="السعر  "
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title2"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/title2"
+            android:text="00.00 JD"
+            android:textColor="#e20000"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/title2"
+            android:layout_below="@+id/title2"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="3dp"
+            android:text="القسم  "
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/txtGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title5"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/title5"
+            android:paddingBottom="3dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+
+        <RelativeLayout
+            android:id="@+id/stateus"
+            android:layout_width="75dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/qty"
+            android:layout_marginEnd="49dp"
+            android:layout_toStartOf="@+id/qty"
+            android:background="@drawable/round"
+            android:visibility="invisible">
+
+
+        </RelativeLayout>
+
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/lblWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title2"
+            android:layout_alignEnd="@+id/stateus"
+            android:layout_marginEnd="7dp"
+            android:text="السعه"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+        <com.lopicard.sonial.TextView2
+            android:id="@+id/txtCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblWeight"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/lblWeight"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_10"
+            app:fonti="4" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
